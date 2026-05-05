@@ -1,0 +1,79 @@
+﻿.welcome-container {
+    background-image: url('../Images/foodbackground1.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 90vh;
+    height: 100%;  /* instead of min-height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.welcome-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 25px;
+    padding: 30px;
+    max-width: 600px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    outline: 3px solid #555;
+}
+.welcome-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: 700;
+}
+
+.welcome-text {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.welcome-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.welcome-btn {
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.menu-btn {
+    background-color: #ff6600;
+    color: white;
+    border-radius: 100px;
+}
+
+.login-btn {
+    background-color: #ff6600;
+    color: #f8f8f8;
+    border: 2px solid #e67e22;
+    border-radius: 100px;
+}
+
+.welcome-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.menu-btn:hover {
+    background-color: #e05f0a;
+}
+
+.login-btn:hover {
+    background-color: #e67e22;
+}
+
+.brand-name {
+    color: #ff6600;
+}

@@ -1,0 +1,25 @@
+﻿.thankyou-container {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    max-width: 800px;
+    margin: auto;
+    padding: 40px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+    margin-top: 50px;
+}
+
+    .thankyou-container h2 {
+        text-align: center;
+        color: #4CAF50;
+    }
+
+    .thankyou-container p {
+        text-align: center;
+    }
+
+    .thankyou-container .btn {
+        margin: 15px 10px 0;
+    }
