@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Order History" MasterPageFile="~/Site.master" Language="C#" AutoEventWireup="true" CodeBehind="OrderHistory.aspx.cs" Inherits="SnackLah.OrderHistory" %>
+<%@ Page Title="Order History" MasterPageFile="~/Site.master" Language="C#" AutoEventWireup="true" CodeBehind="OrderHistory.aspx.cs" Inherits="SnackLah.OrderHistory" %>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="HeadContent" runat="server">
     <link href="Styles/orderhistory.css" rel="stylesheet" />
@@ -15,7 +15,7 @@
                     <span class="order-date">Date: <%# Eval("OrderDate", "{0:dd MMM yyyy}") %></span>
                 </div>
                 <div class="order-details">
-                    <%# Eval("Details") %> <%%>
+                    <ul><%# Eval("Details") %></ul>
                 </div>
             </div>
         </ItemTemplate>
