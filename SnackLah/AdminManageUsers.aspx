@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Manage Users" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="AdminManageUsers.aspx.cs" Inherits="SnackLah.AdminManageUsers" %>
+<%@ Page Title="Manage Users" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="AdminManageUsers.aspx.cs" Inherits="SnackLah.AdminManageUsers" %>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="HeadContent" runat="server">
     <link href="Styles/manageuser.css" rel="stylesheet" />
@@ -25,7 +25,6 @@
             <Columns>
                 <asp:BoundField DataField="UserID" HeaderText="User ID" ReadOnly="True" ItemStyle-CssClass="col-id" />
                 <asp:BoundField DataField="Username" HeaderText="Username" ItemStyle-CssClass="col-user" />
-                <asp:BoundField DataField="Password" HeaderText="Password" />
                 <asp:BoundField DataField="Role" HeaderText="Role" />
 
                 <asp:TemplateField HeaderText="Actions">

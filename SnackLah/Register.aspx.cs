@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Data.SqlClient;
 using System.Web.Configuration;
 
@@ -31,7 +31,7 @@ namespace SnackLah
                 {
                     SqlCommand cmd = new SqlCommand("INSERT INTO Users (Username, Password) VALUES (@username, @password)", con);
                     cmd.Parameters.AddWithValue("@username", username);
-                    cmd.Parameters.AddWithValue("@password", password);
+                    cmd.Parameters.AddWithValue("@password", PasswordHasher.Hash(password));
                     cmd.ExecuteNonQuery();
                     lblMessage.Text = "Registered successfully!";
                 }

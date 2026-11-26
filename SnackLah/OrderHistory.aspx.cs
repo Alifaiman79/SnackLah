@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
@@ -59,7 +59,11 @@ namespace SnackLah
                     {
                         while (dr2.Read())
                         {
-                            details.Append("<li>" + dr2["Name"] + " x" + dr2["Quantity"] + "</li>");
+                            details.Append("<li>")
+                                .Append(System.Web.HttpUtility.HtmlEncode(dr2["Name"].ToString()))
+                                .Append(" x")
+                                .Append(dr2["Quantity"])
+                                .Append("</li>");
                         }
                     }
 

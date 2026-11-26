@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace SnackLah
 {
@@ -10,7 +10,7 @@ namespace SnackLah
             {
                 if (Session["Username"] != null)
                 {
-                    lblWelcome.Text = "Welcome, " + Session["Username"].ToString();
+                    lblWelcome.Text = "Welcome, " + System.Web.HttpUtility.HtmlEncode(Session["Username"].ToString());
                     lnkLogout.Visible = true;
                 }
                 else
