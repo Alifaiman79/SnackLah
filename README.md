@@ -22,5 +22,3 @@ Open `SnackLah.sln` in Visual Studio with the ASP.NET and web development worklo
 ## Current limitations
 
 This is a coursework project, not a production storefront. Passwords are currently stored as plain text in the database; account data should not be real. Before deployment, migrate passwords to a salted password hash, reset existing passwords, and review checkout consistency and order totals. Promo discounts are shown in the cart but are not stored with orders. No automated test suite or CI workflow is included.
-
-The `portfolio-fixes` review patch restricts the user management page to admins, removes password display and editing from that page, and encodes user supplied text rendered in the welcome message and order history.
